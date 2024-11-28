@@ -1,0 +1,22 @@
+<p>signin works!</p>
+<form (ngSubmit)="onSignin()" #signinForm="ngForm">
+    <label for="email_id">Email:</label>
+    <input
+      id="email_id"
+      name="email_id"
+      [(ngModel)]="credentials.email_id"
+      type="email"
+      required
+    />
+  
+    <label for="password">Password:</label>
+    <input
+      id="password"
+      name="password"
+      [(ngModel)]="credentials.password"
+      type="password"
+      required
+    />
+  
+    <button type="submit">Sign In</button>
+  </form>
